@@ -26,9 +26,9 @@ class PostTableViewCell: UITableViewCell {
         
     }
     @IBAction func handleComment(sender: AnyObject) {
-        UIView.animateWithDuration(1.0) { () -> Void in
+        UIView.animateWithDuration(0.5) { () -> Void in
             self.commentView.hidden = false
-            self.commentViewHeight.constant = 30
+//            self.commentViewHeight.constant = 30
         }
     }
     override func awakeFromNib() {
