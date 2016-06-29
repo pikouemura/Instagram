@@ -27,6 +27,7 @@ class PostTableViewCell: UITableViewCell {
     }
     @IBAction func handleComment(sender: AnyObject) {
         UIView.animateWithDuration(1.0) { () -> Void in
+            self.commentView.hidden = false
             self.commentViewHeight.constant = 30
         }
     }
@@ -65,7 +66,7 @@ class PostTableViewCell: UITableViewCell {
             likeButton.setImage(buttonImage, forState: UIControlState.Normal)
         }
         
-        self.commentViewHeight.constant = 0
+        commentView.hidden = true
         
         super.layoutSubviews()
     }
