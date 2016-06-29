@@ -81,6 +81,9 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
         // セル内のボタンのアクションをソースコードで設定する
         cell.likeButton.addTarget(self, action:"handleButton:event:", forControlEvents:  UIControlEvents.TouchUpInside)
         
+        // セル内のボタンのアクションをソースコードで設定する
+        cell.commentPostBtn.addTarget(self, action:"handleCommentPostButton:event:", forControlEvents:  UIControlEvents.TouchUpInside)
+
         // UILabelの行数が変わっている可能性があるので再描画させる
         cell.layoutIfNeeded()
         
@@ -137,4 +140,11 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
             postRef.child(postData.id!).setValue(post)
         }
     }
+    
+    
+    // セル内のボタンがタップされた時に呼ばれるメソッド
+    func handleCommentPostButton(sender: UIButton, event:UIEvent) {
+        print(7)
+    }
+
 }

@@ -9,9 +9,8 @@
 import UIKit
 
 class PostTableViewCell: UITableViewCell {
-    @IBOutlet weak var commentPostBtn: UIButton!
-    @IBOutlet weak var commentViewHeight: NSLayoutConstraint!
     @IBOutlet weak var commentTextView: UITextField!
+    @IBOutlet weak var commentPostBtn: UIButton!
     
     @IBOutlet weak var commentView: UIView!
     @IBOutlet weak var postImageView: UIImageView!
@@ -22,9 +21,6 @@ class PostTableViewCell: UITableViewCell {
     
     var postData: PostData!
     
-    @IBAction func handleCommentPost(sender: AnyObject) {
-        
-    }
     @IBAction func handleComment(sender: AnyObject) {
         UIView.animateWithDuration(0.5) { () -> Void in
             self.commentView.hidden = false

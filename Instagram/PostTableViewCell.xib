@@ -72,9 +72,6 @@
                                             <constraint firstAttribute="width" constant="80" id="sNk-tb-kf8"/>
                                         </constraints>
                                         <state key="normal" title="送信"/>
-                                        <connections>
-                                            <action selector="handleCommentPost:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="RBG-82-qH2"/>
-                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -129,6 +126,7 @@
             </tableViewCellContentView>
             <connections>
                 <outlet property="captionLabel" destination="l7X-0v-1ib" id="Qf9-GC-v4R"/>
+                <outlet property="commentPostBtn" destination="Tcc-xr-Uw9" id="RJd-rT-l7y"/>
                 <outlet property="commentTextView" destination="r3y-aP-X5D" id="KAu-oj-vv9"/>
                 <outlet property="commentView" destination="VNn-UY-mrK" id="dpn-cm-Oy8"/>
                 <outlet property="dateLabel" destination="Fj8-aT-dT3" id="wNY-en-jK3"/>
